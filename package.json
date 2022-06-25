@@ -1,0 +1,26 @@
+{
+  "name": "crossfit-api",
+  "version": "1.0.0",
+  "description": "This is a training repo for practice in building a REST-ful API. In this case I will be working on a crossfit \"workout of the day\" API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuxVictorum/crossfit-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuxVictorum/crossfit-api/issues"
+  },
+  "homepage": "https://github.com/DuxVictorum/crossfit-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
