@@ -4,6 +4,7 @@
   "description": "This is a training repo for practice in building a REST-ful API. In this case I will be working on a crossfit \"workout of the day\" API.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
