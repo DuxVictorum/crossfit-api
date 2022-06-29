@@ -1,9 +1,10 @@
-// Simple router 
-const express = require("express");
-const router = express.Router();
+// // Simple router - TEST EXAMPLE
+// const express = require("express");
+// const router = express.Router();
 
-router.route("/").get((req, res) => {
-  res.send(`<h2>Hello from ${req.baseUrl}</h2>`);
-});
+// Initial TEST example
+// router.route("/").get((req, res) => {
+//   res.send(`<h2>Hello from ${req.baseUrl}</h2>`);
+// });
 
-module.exports = router;
+// module.exports = router;
