@@ -1,20 +1,29 @@
+const workoutService = require("../services/workoutService");
+
 const getAllWorkouts = (req, res) => {
+  const allWorkouts = workoutService.getAllWorkouts();
   res.send("Get all workouts");
 };
 
 const getOneWorkout = (req, res) => {
+  const workout = workoutService.getOneWorkout();
   res.send("Get an existing workout");
 };
 
 const createNewWorkout = (req, res) => {
+  const createdWorkout = workoutService.createNewWorkout();
   res.send("Create a new workout");
 };
 
 const updateOneworkout = (req, res) => {
+  const updatedWorkout = workoutService.updateOneWorkout();
   res.send("Update an existing workout");
 };
 
 const deleteOneWorkout = (req, res) => {
+  // const deletedWorkout = workoutService.deleteOneWorkout();
+  // Below is what the instructions gave, which seems odd...
+  workoutService.deleteOneWorkout();
   res.send("Delete an existing workout");
 };
 
