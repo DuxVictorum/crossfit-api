@@ -14,7 +14,7 @@ const updateOneWorkout = () => {
   return;
 };
 
-const deleteOneWorkout = () -> {
+const deleteOneWorkout = () => {
   return;
 };
 
