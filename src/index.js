@@ -5,9 +5,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // For initial testing purposes only
-// app.get("/", (req, res) => {
-//   res.send("<h2>It seems to be working!</h2>");
-// });
+app.get("/", (req, res) => {
+  res.send("<h2>It seems to be working!</h2>");
+});
 
 app.use("/api/v1/workouts", v1WorkoutRouter);
 

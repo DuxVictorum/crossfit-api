@@ -7,16 +7,10 @@ router.get("/", workoutController.getAllWorkouts);
 
 router.get("/:workoutId", workoutController.getOneWorkout);
 
-router.post("/", (req, res) => {
-  res.send("Create a new workout");
-});
+router.post("/", workoutController.createNewWorkout);
 
-router.patch("/:workoutId", (req, res) => {
-  res.send("Update an existing workout");
-});
+router.patch("/:workoutId", workoutController.updateOneworkout);
 
-router.delete("/:workoutId", (req, res) => {
-  res.send("Delete an existing workout");
-});
+router.delete("/:workoutId", workoutController.deleteOneWorkout);
 
 module.exports = router;
