@@ -1,13 +1,11 @@
 const express = require("express");
+const workoutController = require("../../controllers/workoutController");
+
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Get all workouts");
-});
+router.get("/", workoutController.getAllWorkouts);
 
-router.get("/:workoutId", (req, res) => {
-  res.send("Get an existing workout");
-});
+router.get("/:workoutId", workoutController.getOneWorkout);
 
 router.post("/", (req, res) => {
   res.send("Create a new workout");
