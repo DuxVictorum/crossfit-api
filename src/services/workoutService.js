@@ -1,7 +1,7 @@
-const Workout = require("../database.workout");
+const workout = require("../database/workout");
 
 const getAllWorkouts = () => {
-  const allWorkouts = workout.getAllWorkouts;
+  const allWorkouts = workout.getAllWorkouts();
   return allWorkouts;
 };
 
@@ -27,4 +27,4 @@ module.exports = {
   createNewWorkout,
   updateOneWorkout,
   deleteOneWorkout,
-}
+};
