@@ -19,9 +19,10 @@
   },
   "homepage": "https://github.com/DuxVictorum/crossfit-api#readme",
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.19"
   },
   "dependencies": {
+    "body-parser": "^1.20.0",
     "express": "^4.18.1"
   }
 }
