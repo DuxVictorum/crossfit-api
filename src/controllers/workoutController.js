@@ -22,6 +22,7 @@ const createNewWorkout = (req, res) => {
     !body.name ||
     !body.mode ||
     !body.equipment ||
+    
     !body.exercises ||
     !body.trainerTips
   ) {
