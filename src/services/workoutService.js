@@ -6,12 +6,12 @@ const getAllWorkouts = () => {
   return allWorkouts;
 };
 
-const getOneWorkout = (workoutId) => {
+const getOneWorkout = workoutId => {
   const workout = workout.getOneWorkout(workoutId);
   return workout;
 };
 
-const createNewWorkout = (newWorkout) => {
+const createNewWorkout = newWorkout => {
   const workoutToInsert = {
     ...newWorkout,
     id: uuid(),
@@ -31,7 +31,7 @@ const updateOneWorkout = (workoutId, changes) => {
   return updatedWorkout;
 };
 
-const deleteOneWorkout = (workoutId) => {
+const deleteOneWorkout = workoutId => {
   workout.deleteOneWorkout(workoutId);
 };
 
